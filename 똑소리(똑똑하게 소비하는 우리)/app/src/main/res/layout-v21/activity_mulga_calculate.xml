@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D835"
+    tools:context="com.example.sws.gongmoex1.Mulga.Mulga_calculate"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/cal_market_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해당 시장"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cal_gu_Name"
+            android:layout_toEndOf="@+id/cal_gu_Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/cal_gu_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해당 구"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조리법"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cal_fab"
+            android:layout_toStartOf="@+id/cal_fab" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cal_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_dining"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/cal_image_1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/apple_3" />
+
+                <TextView
+                    android:id="@+id/cal_product_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/cal_image_1"
+                    android:text="사과"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/cal_price_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/cal_product_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_1"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_1" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_1"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_1"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_1"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_1" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_1"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_1"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_2"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cal_image_2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/pear"/>
+
+                <TextView
+                    android:id="@+id/cal_product_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="배"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/cal_price_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_2"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_2" />
+                    <TextView
+                        android:id="@+id/cal_sel_Num_2"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_2"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_2"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_2" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_2"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignBottom="@+id/cal_sel_Num_2"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_3"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_3"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/cabbage"/>
+                <TextView
+                    android:id="@+id/cal_product_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="배추"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                <Button
+                    android:id="@+id/cal_Dec_Btn_3"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="42dp"
+                    android:background="@drawable/btn_dec"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/cal_Inc_Btn_3" />
+                    <TextView
+                        android:id="@+id/cal_sel_Num_3"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_3"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_3"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_3" />
+
+                <Button
+                    android:id="@+id/cal_Inc_Btn_3"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_inc"
+                    android:layout_alignBottom="@+id/cal_sel_Num_3"
+                    android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_4"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_4"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/radish"/>
+                <TextView
+                    android:id="@+id/cal_product_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="무"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_4"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_4" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_4"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_4"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_4"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_4" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_4"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_4"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_5"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_5"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/onion"/>
+                <TextView
+                    android:id="@+id/cal_product_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="양파"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_5"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_5" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_5"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_5"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_5"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_5" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_5"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_5"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_6"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_6"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/lettuce"/>
+                <TextView
+                    android:id="@+id/cal_product_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="상추"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_6"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_6" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_6"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_6"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_6"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_6" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_6"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignBottom="@+id/cal_sel_Num_6"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_7"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_7"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/cucumber"/>
+                <TextView
+                    android:id="@+id/cal_product_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="오이"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_7"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_7" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_7"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_7"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_7"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_7" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_7"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_7"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_8"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_8"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/pumpkin"/>
+                <TextView
+                    android:id="@+id/cal_product_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="애호박"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_8"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_8"
+                        android:layout_marginEnd="42dp" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_8"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_8"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_8"
+                        android:layout_alignTop="@+id/cal_Inc_Btn_8" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_8"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_8" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_9"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_9"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/beef"/>
+                <TextView
+                    android:id="@+id/cal_product_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="쇠고기"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_9"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_9" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_9"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_9"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_9"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_9" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_9"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_9"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_10"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_10"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/pork"/>
+                <TextView
+                    android:id="@+id/cal_product_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="돼지고기"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_10"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_10" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_10"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_10"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_10"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_10" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_10"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_10"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_11"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_11"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/chicken"/>
+                <TextView
+                    android:id="@+id/cal_product_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="닭고기"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_11"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_11" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_11"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_11"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_11"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_11" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_11"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_11"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_12"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_12"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/egg"/>
+                <TextView
+                    android:id="@+id/cal_product_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="달걀(10개)"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_12"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_12" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_12"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_12"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_12"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_12" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_12"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_12"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_13"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_13"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/egg"/>
+                <TextView
+                    android:id="@+id/cal_product_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="달걀(30개)"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_13"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_13" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_13"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_13"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_13"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_13" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_13"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_13"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_14"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_14"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/croaker"/>
+                <TextView
+                    android:id="@+id/cal_product_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="조기"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_14"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_14" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_14"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_14"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_14"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_14" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_14"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_14"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_15"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_15"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/pollock"/>
+                <TextView
+                    android:id="@+id/cal_product_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="동태"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_15"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_15" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_15"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_15"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_15"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_15" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_15"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_15"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_16"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_16"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/squid"/>
+                <TextView
+                    android:id="@+id/cal_product_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="오징어"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_16"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_16" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_16"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_16"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_16"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_16" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_16"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignBottom="@+id/cal_sel_Num_16"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/card_view_cal_17"
+            android:layout_marginTop="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/cal_image_17"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mackerel"/>
+                <TextView
+                    android:id="@+id/cal_product_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="고등어"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cal_price_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/cal_Dec_Btn_17"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="42dp"
+                        android:background="@drawable/btn_dec"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_17" />
+
+                    <TextView
+                        android:id="@+id/cal_sel_Num_17"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.04"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:layout_alignTop="@+id/cal_Dec_Btn_17"
+                        android:layout_toStartOf="@+id/cal_Inc_Btn_17"
+                        android:layout_alignBottom="@+id/cal_Dec_Btn_17" />
+
+                    <Button
+                        android:id="@+id/cal_Inc_Btn_17"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_inc"
+                        android:layout_alignTop="@+id/cal_sel_Num_17"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="right"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/cal_result" />
+
+        <TextView
+            android:id="@+id/cal_result"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#303F9F"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="96dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="100dp"
+            android:text="원"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

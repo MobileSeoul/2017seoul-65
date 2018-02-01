@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout1">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="#FFB6C1"
+        card_view:cardCornerRadius="4dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/peer"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/date"
+                android:layout_alignTop="@+id/date"
+                android:text="점검일자 : "
+                android:textColor="#F0FFF0"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="#F0FFF0"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/textView6"/>
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Product_Price"
+                android:layout_alignBottom="@+id/Product_Price"
+                android:gravity="center_horizontal"
+                android:textColor="#F0FFF0"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Product_Price"
+                android:layout_below="@+id/Product_Name"
+                android:text="원"
+                android:textColor="#F0FFF0"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/Product_Price"/>
+
+            <TextView
+                android:id="@+id/Product_Price"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:textColor="#F0FFFF"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/unit"/>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Product_Name"
+                android:layout_alignTop="@+id/Product_Name"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="비고"
+                android:textColor="#F0FFF0"
+                android:textSize="14dp"
+                android:layout_toRightOf="@id/Product_Name"/>
+
+            <TextView
+                android:id="@+id/Product_Name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/unit"
+                android:layout_below="@+id/mkt_Name"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:textColor="#F0FFF0"
+                android:textSize="18dp"
+                />
+
+
+            <TextView
+                android:id="@+id/mkt_Name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="#F0FFF0"
+                android:textSize="16dp"
+                />
+
+
+            <TextView
+                android:id="@+id/Gu_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unit"
+                android:layout_marginTop="18dp"
+                android:textColor="#F0FFF0"
+                android:textSize="18dp"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:id="@+id/beef"
+                android:title="쇠고기">
+                <menu>
+                <item android:id="@+id/bulgogi"
+                    android:title="불고기"/>
+                <item android:id="@+id/japchae"
+                    android:title="잡채"/>
+                <item android:id="@+id/jangjorim"
+                    android:title="장조림"/>
+                </menu>
+            </item>
+            <item android:id="@+id/pork"
+                android:title="돼지고기">
+                <menu>
+                    <item android:id="@+id/jaeyouk"
+                        android:title="제육구이"/>
+                    <item android:id="@+id/kimchijjigae"
+                        android:title="김치찌개"/>
+                    <item android:id="@+id/jaeyouk2"
+                        android:title="제육볶음"/>
+                </menu>
+            </item>
+            <item android:id="@+id/chicken"
+                android:title="닭고기">
+                <menu>
+                    <item android:id="@+id/ttakjjim"
+                        android:title="닭찜"/>
+                    <item android:id="@+id/samgyetang"
+                        android:title="삼계탕"/>
+                    <item android:id="@+id/ttakgalbi"
+                        android:title="닭갈비"/>
+                </menu>
+            </item>
+            <item android:id="@+id/croaker"
+                android:title="조기">
+                <menu>
+                    <item android:id="@+id/jogigui"
+                        android:title="조기앙념구이"/>
+                    <item android:id="@+id/jogittang"
+                        android:title="조기매운탕"/>
+                    <item android:id="@+id/jogijorim"
+                        android:title="조기조림"/>
+                </menu>
+            </item>
+            <item android:id="@+id/pollack"
+                android:title="동태">
+                <menu>
+                    <item android:id="@+id/dongtaejeon"
+                        android:title="생선전"/>
+                    <item android:id="@+id/dongtaejorim"
+                        android:title="동태조림"/>
+                    <item android:id="@+id/dongtaejjigae"
+                        android:title="동태찌개"/>
+                </menu>
+            </item>
+            <item android:id="@+id/squid"
+                android:title="오징어">
+                <menu>
+                    <item android:id="@+id/ojingeoguk"
+                        android:title="오징어국"/>
+                    <item android:id="@+id/ojingeodeopbap"
+                        android:title="오징어덮밥"/>
+                    <item android:id="@+id/friedojingeo"
+                        android:title="오징어튀김"/>
+                </menu>
+            </item>
+            <item android:id="@+id/mackerel"
+                android:title="고등어">
+                <menu>
+                    <item android:id="@+id/godeungeojorim"
+                        android:title="고등어조림"/>
+                    <item android:id="@+id/gogalbi"
+                        android:title="고갈비"/>
+                    <item android:id="@+id/godeungeokimchijjim"
+                        android:title="고등어김치찜"/>
+                </menu>
+            </item>
+
+
+
+
+</menu>

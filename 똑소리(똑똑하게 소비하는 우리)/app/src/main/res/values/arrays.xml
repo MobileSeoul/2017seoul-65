@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_Gu">
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>강북구</item>
+        <item>강서구</item>
+        <item>관악구</item>
+        <item>광진구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>노원구</item>
+        <item>도봉구</item>
+        <item>동대문구</item>
+        <item>동작구</item>
+        <item>마포구</item>
+        <item>서대문구</item>
+        <item>서초구</item>
+        <item>성동구</item>
+        <item>성북구</item>
+        <item>송파구</item>
+        <item>양천구</item>
+        <item>영등포구</item>
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>종로구</item>
+        <item>중구</item>
+        <item>중랑구</item>
+    </string-array>
+    <string-array name="gangnam_market">
+        <item>롯데백화점강남점</item>
+        <item>도곡시장</item>
+        <item>이마트역삼점</item>
+        <item>청담삼익시장</item>
+    </string-array>
+    <string-array name="gangdong_market">
+        <item>홈플러스강동점</item>
+        <item>암사종합시장</item>
+        <item>둔촌역전통시장</item>
+        <item>이마트명일점</item>
+    </string-array>
+    <string-array name="gangbuk_market">
+        <item>수유재래시장</item>
+        <item>하나로클럽미아점</item>
+        <item>롯데백화점미아점</item>
+        <item>숭인시장</item>
+    </string-array>
+    <string-array name="gangseo_market">
+        <item>화곡본동시장</item>
+        <item>홈플러스등촌점</item>
+        <item>이마트가양점</item>
+        <item>송화시장</item>
+    </string-array>
+    <string-array name="gwanak_market">
+        <item>관악신사시장(신림4동)</item>
+        <item>원당종합시장</item>
+        <item>롯데백화점관악점</item>
+        <item>신원시장(신림1동)</item>
+        <item>세이브마트</item>
+    </string-array>
+    <string-array name="gwangjin_market">
+        <item>자양골목시장</item>
+        <item>이마트자양점</item>
+        <item>롯데마트강변점</item>
+        <item>노룬산골목시장</item>
+    </string-array>
+    <string-array name="guro_market">
+        <item>남구로시장</item>
+        <item>애경백화점</item>
+        <item>이마트신도림점</item>
+        <item>구로시장</item>
+        <item>고척근린시장</item>
+    </string-array>
+    <string-array name="geumcheon_market">
+        <item>홈플러스시흥점</item>
+        <item>현대시장</item>
+        <item>남문시장</item>
+        <item>홈플러스독산점</item>
+    </string-array>
+    <string-array name="nowon_market">
+        <item>롯데백화점노원점</item>
+        <item>상계중앙시장</item>
+        <item>홈플러스중계점</item>
+        <item>공릉동도깨비시장</item>
+    </string-array>
+    <string-array name="dobong_market">
+        <item>방학동도깨비시장</item>
+        <item>신창시장</item>
+        <item>이마트창동점</item>
+        <item>홈플러스방학점</item>
+    </string-array>
+    <string-array name="dongdaemun_market">
+        <item>롯데백화점청량리점</item>
+        <item>청량리종합시장</item>
+        <item>홈플러스동대문점</item>
+        <item>경동시장</item>
+    </string-array>
+    <string-array name="dongjak_market">
+        <item>태평백화점</item>
+        <item>남성시장</item>
+    </string-array>
+    <string-array name="mapo_market">
+        <item>그랜드마트신촌점</item>
+        <item>마포농수산물시장</item>
+        <item>홈플러스월드컵점</item>
+        <item>망원시장</item>
+    </string-array>
+    <string-array name="seodaemun_market">
+        <item>인왕시장</item>
+        <item>현대백화점신촌점</item>
+        <item>롯데슈퍼</item>
+        <item>영천시장</item>
+    </string-array>
+    <string-array name="seocho_market">
+        <item>신세계백화점강남점</item>
+        <item>방림시장</item>
+        <item>하나로클럽양재점</item>
+        <item>뉴코아아울렛강남점</item>
+    </string-array>
+    <string-array name="seongdong_market">
+        <item>이마트왕십리점</item>
+        <item>이마트성수점</item>
+        <item>금남시장</item>
+        <item>뚝도시장</item>
+    </string-array>
+    <string-array name="seongbuk_market">
+        <item>현대백화점미아점</item>
+        <item>장위골목시장</item>
+        <item>이마트미아점</item>
+        <item>돈암제일시장</item>
+    </string-array>
+    <string-array name="songpa_market">
+        <item>롯데백화점잠실점</item>
+        <item>방이시장</item>
+        <item>홈플러스잠실점</item>
+        <item>마천중앙시장</item>
+    </string-array>
+    <string-array name="yangcheon_market">
+        <item>홈플러스목동점</item>
+        <item>목3동시장</item>
+        <item>이마트목동점</item>
+        <item>신영시장</item>
+    </string-array>
+    <string-array name="yeongdeungpo_market">
+        <item>롯데백화점영등포점</item>
+        <item>대림중앙시장</item>
+        <item>이마트여의도점</item>
+        <item>영등포전통시장</item>
+        <item>홈플러스영등포점</item>
+    </string-array>
+    <string-array name="yongsan_market">
+        <item>농협하나로마트용산점</item>
+        <item>후암시장</item>
+        <item>이마트용산점</item>
+        <item>용문시장</item>
+    </string-array>
+    <string-array name="eunpyeong_market">
+        <item>2001아울렛불광점</item>
+        <item>대조시장</item>
+        <item>이마트은평점</item>
+        <item>대림시장</item>
+    </string-array>
+    <string-array name="jongro_market">
+        <item>통인시장</item>
+        <item>광장시장</item>
+    </string-array>
+    <string-array name="junggu_market">
+        <item>롯데백화점</item>
+        <item>남대문시장</item>
+        <item>신세계백화점</item>
+        <item>이마트청계점</item>
+        <item>서울중앙시장</item>
+    </string-array>
+    <string-array name="jungrang_market">
+        <item>홈플러스면목점</item>
+        <item>우림시장</item>
+        <item>이마트상봉점</item>
+        <item>동원시장</item>
+    </string-array>
+</resources>
